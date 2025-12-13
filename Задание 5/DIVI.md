@@ -117,14 +117,15 @@ T_min = 160 / 10 = 16
 **Итого: 160**
 
 ## Шаг 5: Диаграмма Ганта
-
+```mermaid
 gantt
     title Диаграмма Ганта выполнения заданий
-    dateFormat HH
-    axisFormat %H
+    dateFormat DD HH:mm
+    axisFormat %H:%M
+    Начало выполнения работ : milestone, m1, 01 00:00, 0h
     
-    section Исполнитель 1 (p=4)
-    A (0-4) : 0, 4h
+    section Исполнитель 1 
+    A (0-4) : a1, 0, 4h
     A (4-6) : after a1, 2h
     E (6-8) : after a2, 2h
     E (8-10) : after a3, 2h
@@ -132,7 +133,7 @@ gantt
     F (13-15) : after a5, 2h
     F (15-16) : after a6, 1h
     
-    section Исполнитель 2 (p=3)
+    section Исполнитель 2 
     B (0-4) : b1, 0, 4h
     B (4-6) : after b1, 2h
     A (6-8) : after b2, 2h
@@ -141,7 +142,7 @@ gantt
     C (13-15) : after b5, 2h
     C (15-16) : after b6, 1h
     
-    section Исполнитель 3 (p=2)
+    section Исполнитель 3 
     C (0-4) : c1, 0, 4h
     C (4-6) : after c1, 2h
     E (6-8) : after c2, 2h
@@ -150,7 +151,7 @@ gantt
     D (13-15) : after c5, 2h
     B (15-16) : after c6, 1h
     
-    section Исполнитель 4 (p=1)
+    section Исполнитель 4 
     D (0-4) : d1, 0, 4h
     D (4-6) : after d1, 2h
     D (6-8) : after d2, 2h
@@ -158,7 +159,7 @@ gantt
     D (10-13) : after d4, 3h
     B (13-15) : after d5, 2h
     C (15-16) : after d6, 1h
-
+```
 
 ## Ответ
 
