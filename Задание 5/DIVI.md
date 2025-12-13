@@ -125,40 +125,40 @@ gantt
     Начало выполнения работ : milestone, m1, 01 00:00, 0h
     
     section Исполнитель 1 
-    A   : a1, 0, 4h
-    A   : a2, after a1, 2h
-    E   : a3, after a2, 2h
-    E   : a4, after a3, 2h
-    C   : a5, after a4, 3h
-    F   : a6, after a5, 2h
-    F   : a7, after a6, 1h
+    A       : a1, 0, 4h
+    A       : a2, after a1, 2h
+    E       : a3, after a2, 2h
+    E       : a4, after a3, 2h
+    C       : a5, after a4, 3h
+    F       : a6, after a5, 2h
+    F       : a7, after a6, 1h
     
     section Исполнитель 2 
-    B   : b1, 0, 4h
-    B   : b2, after b1, 2h
-    A   : b3, after b2, 2h
-    D   : b4, after b3, 2h
-    A   : b5, after b4, 3h
-    C   : b6, after b5, 2h
-    C   : b7, after b6, 1h
+    B       : b1, 0, 4h
+    B       : b2, after b1, 2h
+    A       : b3, after b2, 2h
+    D       : b4, after b3, 2h
+    A       : b5, after b4, 3h
+    C       : b6, after b5, 2h
+    C       : b7, after b6, 1h
     
     section Исполнитель 3 
-    C   : c1, 0, 4h
-    C   : c2, after c1, 2h
-    E   : c3, after c2, 2h
-    B   : c4, after c3, 2h
-    B   : c5, after c4, 3h
-    D   : c6, after c5, 2h
-    B   : c7, after c6, 1h
+    C       : c1, 0, 4h
+    C       : c2, after c1, 2h
+    E       : c3, after c2, 2h
+    B       : c4, after c3, 2h
+    B       : c5, after c4, 3h
+    D       : c6, after c5, 2h
+    B       : c7, after c6, 1h
     
     section Исполнитель 4 
-    D   : d1, 0, 4h
-    D   : d2, after d1, 2h
-    D   : d3, after d2, 2h
-    A   : d4, after d3, 2h
-    D   : d5, after d4, 3h
-    B   : d6, after d5, 2h
-    C   : d7, after d6, 1h
+    D       : d1, 0, 4h
+    D       : d2, after d1, 2h
+    D       : d3, after d2, 2h
+    A       : d4, after d3, 2h
+    D       : d5, after d4, 3h
+    B       : d6, after d5, 2h
+    C       : d7, after d6, 1h
 ```
 
 ## Ответ
