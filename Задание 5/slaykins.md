@@ -214,7 +214,7 @@ gantt
     B :a7, after a6, 0.5h
     C :a8, after a7, 0.5h
     D :a9, after a8, 0.5h
-    D :a10, after a9, 0.5h
+    E :a10, after a9, 0.5h
 
     section Исполнитель 2
     B :b1, 01 00:00, 3h
