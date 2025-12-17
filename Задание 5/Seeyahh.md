@@ -273,26 +273,66 @@ gantt
     section Исполнитель 1
     A :a1, 01 00:00, 2h
     A :a2, after a1, 1h
-    A :a3, after a2, 0.5h
-    A :a4, after a3, 4.8h
+    A :a3, after a2, 0.1h
+    B :a4, after a3, 0.1h
+    C :a5, after a4, 0.1h
+    D :a6, after a5, 0.1h
+    E :a7, after a6, 0.1h
+    A :a8, after a7, 0.8h
+    B :a9, after a8, 0.8h
+    C :a10, after a9, 0.8h
+    D :a11, after a10, 0.8h
+    E :a12, after a11, 0.8h
+    F :a13, after a11, 0.8h
 
     section Исполнитель 2
     B :b1, 01 00:00, 2h
     B :b2, after b1, 1h
-    B :b3, after b2, 0.5h
-    B :b4, after b3, 4.8h
+    B :b3, after b2, 0.1h
+    C :b4, after b3, 0.1h
+    D :b5, after b4, 0.1h
+    E :b6, after b5, 0.1h
+    A :b7, after b6, 0.1h
+    B :b8, after b7, 0.8h
+    C :b9, after b8, 0.8h
+    D :b10, after b9, 0.8h
+    E :b11, after b10, 0.8h
+    F :b12, after b11, 0.8h
+    A :b13, after b11, 0.8h
 
     section Исполнитель 3
     C :c1, 01 00:00, 2h
-    C :c2, after c1, 1h
-    C :c3, after c2, 0.5h
-    C :c4, after c3, 4.8h
+    C :c2, after c1, 0.33h
+    D :c3, after c2, 0.33h
+    E :c4, after c3, 0.33h
+    C :c5, after c4, 0.1h
+    D :c6, after c5, 0.1h
+    E :c7, after c6, 0.1h
+    A :c8, after c7, 0.1h
+    B :c9, after c8, 0.1h
+    C :c10, after c9, 0.8h
+    D :c11, after c10, 0.8h
+    E :c12, after c11, 0.8h
+    F :c13, after c12, 0.8h
+    A :c14, after c13, 0.8h
+    B :c15, after c14, 0.8h
 
     section Исполнитель 4
     D :d1, 01 00:00, 2h
-    D :d2, after d1, 1h
-    D :d3, after d2, 0.5h
-    D :d4, after d3, 4.8h
+    C :d2, after d1, 0.33h
+    D :d3, after d2, 0.33h
+    E :d4, after d3, 0.33h
+    D :d5, after d4, 0.1h
+    E :d6, after d5, 0.1h
+    A :d7, after d6, 0.1h
+    B :d8, after d7, 0.1h
+    C :d9, after d8, 0.1h
+    D :d10, after d9, 0.8h
+    E :d11, after d10, 0.8h
+    F :d12, after d11, 0.8h
+    A :d13, after d12, 0.8h
+    B :d14, after d13, 0.8h
+    C :d15, after d14, 0.8h
 
     Окончание выполнения работ : milestone, m2, 01 08:20, 0h
 ```
