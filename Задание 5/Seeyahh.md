@@ -283,7 +283,7 @@ gantt
     C :a10, after a9, 0.8h
     D :a11, after a10, 0.8h
     E :a12, after a11, 0.8h
-    F :a13, after a11, 0.8h
+    F :a13, after a12, 0.8h
 
     section Исполнитель 2
     B :b1, 01 00:00, 2h
@@ -298,7 +298,7 @@ gantt
     D :b10, after b9, 0.8h
     E :b11, after b10, 0.8h
     F :b12, after b11, 0.8h
-    A :b13, after b11, 0.8h
+    A :b13, after b12, 0.8h
 
     section Исполнитель 3
     C :c1, 01 00:00, 2h
