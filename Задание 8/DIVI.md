@@ -3,21 +3,18 @@
 Начальные условия:
 Исходный двудольный граф:
 
-Доля 1: A, B, C, D, E
-
-Доля 2: 1, 2, 3, 4, 5
 
 Начальное паросочетание: [A,5], [E,2] (выделены зеленым)
 ```mermaid
 graph LR
-    subgraph "Доля 1"
+    subgraph "Фронт 1"
         A((A))
         B((B))
         C((C))
         D((D))
         E((E))
     end
-    subgraph "Доля 2"
+    subgraph "Фронт 2"
         1((1))
         2((2))
         3((3))
@@ -48,16 +45,16 @@ graph LR
 Начинаем с вершины B:
 ```mermaid
 graph LR
-    subgraph "1 уровень"
+    subgraph "1 Фронт"
         B((B))
         C((C))
         D((D))
     end
-    subgraph "2 уровень"
+    subgraph "2 Фронт"
         5((5))
         2((2))
     end
-    subgraph "3 уровень"
+    subgraph "3 Фронт"
         A((A))
         E((E))
     end
@@ -68,7 +65,6 @@ graph LR
 
     
     style B fill:#FF0000
-    style C fill:#FF0000
     style D fill:#FF0000
     style A fill:#008000
     style E fill:#008000
@@ -145,7 +141,6 @@ graph LR
     D --> 2 ==> E --> 1
     E --> 4
     
-    style C fill:#FF0000
     style D fill:#FF0000
     style 1 fill:#FF0000
     style 4 fill:#FF0000
