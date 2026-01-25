@@ -118,12 +118,15 @@ graph LR
 graph LR
     subgraph " 0 фр."
         C((C))
-        E((E))
-        D((D))
+        
     end
     subgraph " 1 фр."
         2((2))
         4((4))
+    end
+    subgraph " 2 фр."
+        E((E))
+        D((D))
     end
     C ---> 2 ===> E
     C ---> 4 ===> D
