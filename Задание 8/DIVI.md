@@ -63,7 +63,6 @@ graph LR
     end
     B --> 5 ==> A --> 3
     B --> 5 ==> A --> 4
-    C --> 2 
     E --> 4
     B --> 5 ==> A --> 3
 
@@ -94,14 +93,14 @@ graph LR
 После перекрашивания паросочетания: [B,5], [A,3], [E,2]  (выделены зеленым)
 ```mermaid
 graph LR
-    subgraph "Доля 1"
+    subgraph "Фронт 1"
         A((A))
         B((B))
         C((C))
         D((D))
         E((E))
     end
-    subgraph "Доля 2"
+    subgraph "Фронт 2"
         1((1))
         2((2))
         3((3))
@@ -129,22 +128,21 @@ graph LR
 # Шаг 2: Поиск чередующейся цепи относительно паросочетания [B,5], [A,3], [E,2]
 ```mermaid
 graph LR
-    subgraph "1 уровень"
+    subgraph "1 Фронт"
         C((C))
         D((D))
     end
-    subgraph "2 уровень"
+    subgraph "2 Фронт"
         2((2))
     end
-    subgraph "3 уровень"
+    subgraph "3 Фронт"
         E((E))
     end
-    subgraph "4 уровень"
+    subgraph "4 Фронт"
         1((1))
         4((4))
     end
-    C --> 2 ==> E --> 1
-    D --> 2
+    D --> 2 ==> E --> 1
     E --> 4
     
     style C fill:#FF0000
@@ -169,14 +167,14 @@ graph LR
 После перекрашивания паросочетания: [E,1], [C,2], [A,3] [B,5] (выделены зеленым)
 ```mermaid
 graph LR
-    subgraph "Доля 1"
+    subgraph "Фронт 1"
         A((A))
         B((B))
         C((C))
         D((D))
         E((E))
     end
-    subgraph "Доля 2"
+    subgraph "Фронт 2"
         1((1))
         2((2))
         3((3))
@@ -208,13 +206,13 @@ graph LR
 # Шаг 3: Поиск чередующейся цепи относительно паросочетания [E,1], [C,2], [A,3] [B,5]
 ```mermaid
 graph LR
-    subgraph "1 уровень"
+    subgraph "1 Фронт"
         D((D))
     end
-    subgraph "2 уровень"
+    subgraph "2 Фронт"
         2((2))
     end
-    subgraph "3 уровень"
+    subgraph "3 Фронт"
         C((C))
     end
     D --> 2 ==> C
