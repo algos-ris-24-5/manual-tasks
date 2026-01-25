@@ -47,7 +47,6 @@ graph LR
 graph LR
     subgraph "1 Фронт"
         B((B))
-        C((C))
         D((D))
     end
     subgraph "2 Фронт"
@@ -64,15 +63,12 @@ graph LR
     D --> 2 ==> E --> 1
 
     
-    style B fill:#FF0000
-    style D fill:#FF0000
+
     style A fill:#008000
     style E fill:#008000
     style 5 fill:#008000
     style 2 fill:#008000
-    style 1 fill:#FF0000
-    style 3 fill:#FF0000
-    style 4 fill:#FF0000
+
 ```
 Чередующаяся цепь: B-5-A-3
 
@@ -141,9 +137,7 @@ graph LR
     D --> 2 ==> E --> 1
     E --> 4
     
-    style D fill:#FF0000
-    style 1 fill:#FF0000
-    style 4 fill:#FF0000
+
     style E fill:#008000
     style 2 fill:#008000
 ```
@@ -212,7 +206,7 @@ graph LR
     end
     D --> 2 ==> C
     
-    style D fill:#FF0000
+
     style C fill:#008000
     style 2 fill:#008000
 ```
