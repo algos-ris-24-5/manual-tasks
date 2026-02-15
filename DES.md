@@ -117,7 +117,7 @@
 После всех корректировок поток остаётся максимальным, но его стоимость становится минимальной.
 
 **Таблица 2 — финальный поток и его стоимость**  
-<img width="416" height="123" alt="TB2 drawio" src="https://github.com/user-attachments/assets/ed072525-a9ef-4ddc-95e8-e0a45e8453bd" />
+<img width="420" height="123" alt="image" src="https://github.com/user-attachments/assets/24d59b49-2206-4683-ba22-3fd0d40570f5" />
 
 
 Итоговые значения:
