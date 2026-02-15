@@ -5,29 +5,29 @@
 Сток: T
 Дуги, их пропускная способность
 
-![alt text](imagesDIVI\image.png)
+![alt text](imagesDIVI/image.png)
 
 # Этап 1: Построение исходной сети
 Строим ориентированный граф. У каждой дуги указана пара чисел локальный поток/пропускная способность
 
-![alt text](imagesDIVI\image-1.png)
+![alt text](imagesDIVI/image-1.png)
 
 # Этап 2: Поиск увеличивающих путей (алгоритм Форда-Фалкерсона)
 Итерация №1
 
-![alt text](imagesDIVI\image-2.png)
+![alt text](imagesDIVI/image-2.png)
 
 Корректировка остаточной сети
 Локальный путь дуги B => T стал равен 6, резерв равен 6.
 Локальный путь дуги А => В стал равен 6, резерв равен 2.
 Локальный путь дуги S => A стал равен 6. Дуга насыщенная.
 
-![alt text](imagesDIVI\image-3.png)
+![alt text](imagesDIVI/image-3.png)
 
 ## Итерация №2
 Продолжаем поиск увеличивающего пути в остаточной сети.
 
-![alt text](imagesDIVI\image-4.png)
+![alt text](imagesDIVI/image-4.png)
 
 Новый увеличивающий путь: T => B => C => S
 Минимальная пропускная способность = 6
@@ -45,9 +45,9 @@
 F = 12
 S = 6 + 24 + 0 + 0 + 18 + 0 + 0 + 6 + 12 = 66
 
-![alt text](imagesDIVI\image-5.png)
+![alt text](imagesDIVI/image-5.png)
 
-![alt text](imagesDIVI\image-6.png)
+![alt text](imagesDIVI/image-6.png)
 
 Увеличивающего пути нет. Текущий поток максимальный. Алгоритм завершается.
 Поток F = 6 + 6 = 12
@@ -68,8 +68,8 @@ S = 6 + 24 + 0 + 0 + 18 + 0 + 0 + 6 + 12 = 66
 Локальный путь дуги S => D стал равен 4, резерв - 3.
 Локальный путь дуги S => A стал равен 2, резерв - 4.
 
-![alt text](imagesDIVI\image-7.png)
-![alt text](imagesDIVI\image-8.png)
+![alt text](imagesDIVI/image-7.png)
+![alt text](imagesDIVI/image-8.png)
 
 -4 + 1 + 1 + 1 - 1 = -2 ( Сумма отрицательная, подходит)
 Минимальная пропускная способность дуг цикла = 4
@@ -81,8 +81,8 @@ S = 6 + 24 + 0 + 0 + 18 + 0 + 0 + 6 + 12 = 66
 F = 12
 S = 2 + 4 + 18 + 0 + 4 + 0 + 10 + 8 + 12 = 58
 
-![alt text](imagesDIVI\image-9.png)
-![alt text](imagesDIVI\image-10.png)
+![alt text](imagesDIVI/image-9.png)
+![alt text](imagesDIVI/image-10.png)
 
 Циклов отрицательной стоимости нет
 
